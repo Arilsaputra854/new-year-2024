@@ -9,13 +9,33 @@
 </head>
 
 <body onload="startConfetti()">
-    <script src="confetti.js"></script>
-    <audio controls autoplay hidden>
+    <audio id="bgAudio">
         <source src="assets/bgsound.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
     </audio>
-    
+    <script>
+        var bgAudio = document.getElementById('bgAudio');
+
+        // Attempt to autoplay the audio
+        function tryAutoPlay() {
+            bgAudio.play().then(function () {
+                // Autoplay succeeded
+                console.log('Audio playback started successfully.');
+            }).catch(function (error) {
+                // Autoplay failed, handle the error
+                console.error('Autoplay failed:', error);
+            });
+        }
+
+        // Listen for a user interaction event to start audio playback
+        document.addEventListener('click', function () {
+            tryAutoPlay();
+            // Remove the event listener to prevent multiple attempts
+            document.removeEventListener('click', arguments.callee);
+        });
+    </script>
+    <script src="confetti.js"></script>
     <div class="top" id="top">
+
         <img id="flag" src="assets/img/image-removebg-preview (26).png">
         <img id="title" src="assets/img/2024.png">
         <img id="ucapan" src="assets/img/ucapan.png" alt="">

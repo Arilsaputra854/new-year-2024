@@ -5,6 +5,7 @@ var stopConfetti; //call to stop adding confetti
 var toggleConfetti; //call to start or stop the confetti animation depending on whether it's already running
 var removeConfetti; //call to stop the confetti animation and remove all confetti immediately
 
+
 (function() {
 	startConfetti = startConfettiInner;
 	stopConfetti = stopConfettiInner;
