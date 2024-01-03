@@ -82,9 +82,18 @@ p{
 #trumpet-left {
     width: 150px;
     position: relative;
+    margin-top: -150px;
+    transform: translateY(-900px);
+    z-index: 3;
+}
+
+#trumpet-left1 {
+    width: 150px;
+    position: relative;
     margin-top: -100px;
     z-index: 3;
 }
+
 
 
 #trumpet-right {
@@ -97,31 +106,70 @@ p{
 
 .trumpet {
     display: flex;
-    margin-right: 20px;
     justify-content: space-between;
 }
 
+
+.trumpet-right {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -120px;
+    float: right;
+}
+
+
+.trumpet-right2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -0px;
+    transform: translateY(150px);
+    float: right;
+}
+
+
+.trumpet-right3 {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(500px);
+    float: right;
+}
 #title-2023{
     width: 80px;
     margin-left: 20px;
 }
 
-.photo{
+.photo-1{
     width: 100%;
     height: 88vh;
 }
 
-.photo img{
+.photo-1 img{
     width: 200px;
     display: block;
     position: absolute;
 }
 
-.photo img:hover:not(#line_1):not(#line_2):not(#line_3){
+.photo-1 img:hover:not(#line_1):not(#line_2):not(#line_3):not(#line_8){
     transform: scale(2);
     transition: transform 0.5s;
 }
 
+.photo-2{
+    margin-top: -100px;
+    width: 100%;
+    height: 88vh;
+}
+
+.photo-2 img{
+    width: 200px;
+    display: block;
+    position: absolute;
+}
+
+.photo-2 img:hover:not(#line_4):not(#line_5):not(#line_6):not(#line_7){
+    transform: scale(2);
+    transition: transform 0.5s;
+}
 #image_1{
     right: 0;
     margin-right: 50px;
@@ -144,6 +192,42 @@ p{
     left: 0;
 }
 
+
+#image_5{
+    right: 0;
+    margin-right: 50px;
+    margin-top: -100px;
+}
+
+#image_6{
+    margin-top: 100px;
+    margin-left: 50px;
+    left: 0;
+    width: 150px;
+}
+#image_7{
+    margin-right: 50px;
+    margin-top: 200px;
+    right: 0;
+}
+
+#image_8{
+    margin-top: 320px;
+    margin-left: 50px;
+    left: 0;
+    width: 150px;
+}
+
+
+#image_9{
+    margin-top: 400px;
+    margin-right: 50px;
+    right: 0;
+    width: 150px;
+}
+
+
+
 #line_1{
     display: block;
     position: absolute;
@@ -165,4 +249,48 @@ p{
     position: absolute;
     transform: translate(250px, 350px)scaleX(-1)scaleY(-1); 
     width: 150px;
+}
+
+#line_4{
+    display: block;
+    position: absolute;
+    transform: translate(150px, 40px)scaleX(-1)rotate(45deg); 
+    width: 150px;
+}
+
+#line_5{
+    display: block;
+    position: absolute;
+    transform: translate(180px, 180px)scaleX(-1)rotate(0deg); 
+    width: 150px;
+}
+
+
+#line_6{
+    display: block;
+    position: absolute;
+    transform: translate(180px, 300px)scaleX(-1)rotate(45deg); 
+    width: 150px;
+}
+
+#line_7{
+    display: block;
+    position: absolute;
+    transform: translate(180px, 370px)scaleX(-1)rotate(0); 
+    width: 150px;
+}
+
+#line_8{
+    display: block;
+    position: absolute;
+    transform: translate(180px, 450px)scaleX(-1)rotate(-30deg); 
+    width: 150px;
+}
+
+
+#illustration2{
+    width: 300px;
+    position: relative;
+    display: block;
+    margin-top: -200px;
 }
