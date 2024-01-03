@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Happy New Year</title>
-    <script src="confetti.js"></script>
 </head>
 
 <body onload="startConfetti()">
-    <audio controls autoplay hidden src="assets/audio/bgsound.mp3" type="audio/mp3">
+    <script src="confetti.js"></script>
+    <audio controls autoplay hidden>
+        <source src="assets/bgsound.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
+    
     <div class="top" id="top">
         <img id="flag" src="assets/img/image-removebg-preview (26).png">
         <img id="title" src="assets/img/2024.png">
