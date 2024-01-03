@@ -117,8 +117,9 @@ p{
     position: absolute;
 }
 
-.photo img:hover{
-    scale: 2;
+.photo img:hover:not(#line_1):not(#line_2):not(#line_3){
+    transform: scale(2);
+    transition: transform 0.5s;
 }
 
 #image_1{
