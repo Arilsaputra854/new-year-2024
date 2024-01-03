@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Happy New Year</title>
+    <script src="confetti.js"></script>
 </head>
 
-<body>
-    <div class="top">
+<body onload="startConfetti()">
+    <div class="top" id="top">
         <img id="flag" src="assets/img/image-removebg-preview (26).png">
         <img id="title" src="assets/img/2024.png">
         <img id="ucapan" src="assets/img/ucapan.png" alt="">
@@ -58,6 +59,8 @@
         <div class="trumpet-right">
             <img id="trumpet-right" src="assets/img/trumpet.png" alt="">
         </div>
+        
+    <div id="confetti-container"></div>
     </div>
     
 </body>

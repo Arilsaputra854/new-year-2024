@@ -8,8 +8,8 @@ body {
     align-content: center;
     justify-content: center;
     background-color: #00448F;
+    
 }
-
 p{
     text-align: center;
     color: white;
@@ -22,9 +22,10 @@ p{
 .top {
     justify-content: center;
     align-content: center;
-    width: 100%;
+    width: 500px;
     height: 100vh;
-    position: relative;
+    position: absolute;
+    z-index: 0;
 }
 
 #flag {
